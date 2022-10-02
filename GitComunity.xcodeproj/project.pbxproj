@@ -64,11 +64,11 @@
 				009A8E7328E8B391000AA29B /* SceneDelegate.swift */,
 				009A8E8528E98709000AA29B /* SearchVC.swift */,
 				009A8E8728E98795000AA29B /* FavoritesListVC.swift */,
+				009A8E8928E9F1FF000AA29B /* GCbutton.swift */,
+				009A8E8B28E9F884000AA29B /* GCtextField.swift */,
 				009A8E7A28E8B39C000AA29B /* Assets.xcassets */,
 				009A8E7C28E8B39C000AA29B /* LaunchScreen.storyboard */,
 				009A8E7F28E8B39C000AA29B /* Info.plist */,
-				009A8E8928E9F1FF000AA29B /* GCbutton.swift */,
-				009A8E8B28E9F884000AA29B /* GCtextField.swift */,
 			);
 			path = GitComunity;
 			sourceTree = "<group>";
