@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		005238AF28EB439E001A187F /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005238AE28EB439E001A187F /* FollowerListVC.swift */; };
 		009A8E7228E8B391000AA29B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A8E7128E8B391000AA29B /* AppDelegate.swift */; };
 		009A8E7428E8B391000AA29B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A8E7328E8B391000AA29B /* SceneDelegate.swift */; };
 		009A8E7B28E8B39C000AA29B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009A8E7A28E8B39C000AA29B /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		005238AE28EB439E001A187F /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		009A8E6E28E8B391000AA29B /* GitComunity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitComunity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		009A8E7128E8B391000AA29B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		009A8E7328E8B391000AA29B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				009A8E8728E98795000AA29B /* FavoritesListVC.swift */,
 				009A8E8928E9F1FF000AA29B /* GCbutton.swift */,
 				009A8E8B28E9F884000AA29B /* GCtextField.swift */,
+				005238AE28EB439E001A187F /* FollowerListVC.swift */,
 				009A8E7A28E8B39C000AA29B /* Assets.xcassets */,
 				009A8E7C28E8B39C000AA29B /* LaunchScreen.storyboard */,
 				009A8E7F28E8B39C000AA29B /* Info.plist */,
@@ -147,6 +150,7 @@
 				009A8E8828E98795000AA29B /* FavoritesListVC.swift in Sources */,
 				009A8E8628E98709000AA29B /* SearchVC.swift in Sources */,
 				009A8E7228E8B391000AA29B /* AppDelegate.swift in Sources */,
+				005238AF28EB439E001A187F /* FollowerListVC.swift in Sources */,
 				009A8E7428E8B391000AA29B /* SceneDelegate.swift in Sources */,
 				009A8E8C28E9F884000AA29B /* GCtextField.swift in Sources */,
 			);
