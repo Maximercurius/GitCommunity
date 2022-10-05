@@ -51,6 +51,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		005238BA28EE0A34001A187F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		009A8E6528E8B391000AA29B = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +77,7 @@
 		009A8E7028E8B391000AA29B /* GitComunity */ = {
 			isa = PBXGroup;
 			children = (
+				005238BA28EE0A34001A187F /* Screens */,
 				009A8E7128E8B391000AA29B /* AppDelegate.swift */,
 				009A8E7328E8B391000AA29B /* SceneDelegate.swift */,
 				009A8E8528E98709000AA29B /* SearchVC.swift */,
