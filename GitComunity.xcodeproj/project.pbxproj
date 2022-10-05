@@ -54,8 +54,41 @@
 		005238BA28EE0A34001A187F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				009A8E8528E98709000AA29B /* SearchVC.swift */,
+				009A8E8728E98795000AA29B /* FavoritesListVC.swift */,
+				005238AE28EB439E001A187F /* FollowerListVC.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		005238BB28EE0AA8001A187F /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				005238B628EC8B2B001A187F /* GCAlertVC.swift */,
+				009A8E8928E9F1FF000AA29B /* GCbutton.swift */,
+				009A8E8B28E9F884000AA29B /* GCtextField.swift */,
+				005238B028EC873E001A187F /* GCTitleLabel.swift */,
+				005238B228EC89A2001A187F /* GCBodyLabel.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		005238BC28EE0B09001A187F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				005238B828EC9C5B001A187F /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		005238BD28EE0B52001A187F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				009A8E7128E8B391000AA29B /* AppDelegate.swift */,
+				009A8E7328E8B391000AA29B /* SceneDelegate.swift */,
+				009A8E7A28E8B39C000AA29B /* Assets.xcassets */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		009A8E6528E8B391000AA29B = {
@@ -77,19 +110,10 @@
 		009A8E7028E8B391000AA29B /* GitComunity */ = {
 			isa = PBXGroup;
 			children = (
+				005238BD28EE0B52001A187F /* Support */,
+				005238BC28EE0B09001A187F /* Extensions */,
+				005238BB28EE0AA8001A187F /* CustomViews */,
 				005238BA28EE0A34001A187F /* Screens */,
-				009A8E7128E8B391000AA29B /* AppDelegate.swift */,
-				009A8E7328E8B391000AA29B /* SceneDelegate.swift */,
-				009A8E8528E98709000AA29B /* SearchVC.swift */,
-				009A8E8728E98795000AA29B /* FavoritesListVC.swift */,
-				009A8E8928E9F1FF000AA29B /* GCbutton.swift */,
-				009A8E8B28E9F884000AA29B /* GCtextField.swift */,
-				005238AE28EB439E001A187F /* FollowerListVC.swift */,
-				005238B028EC873E001A187F /* GCTitleLabel.swift */,
-				005238B228EC89A2001A187F /* GCBodyLabel.swift */,
-				005238B628EC8B2B001A187F /* GCAlertVC.swift */,
-				005238B828EC9C5B001A187F /* UIViewController+Ext.swift */,
-				009A8E7A28E8B39C000AA29B /* Assets.xcassets */,
 				009A8E7C28E8B39C000AA29B /* LaunchScreen.storyboard */,
 				009A8E7F28E8B39C000AA29B /* Info.plist */,
 			);
