@@ -88,6 +88,7 @@
 		005238BD28EE0B52001A187F /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				009A8E7C28E8B39C000AA29B /* LaunchScreen.storyboard */,
 				009A8E7128E8B391000AA29B /* AppDelegate.swift */,
 				009A8E7328E8B391000AA29B /* SceneDelegate.swift */,
 				009A8E7A28E8B39C000AA29B /* Assets.xcassets */,
@@ -125,11 +126,10 @@
 			children = (
 				005238BE28EF3EA8001A187F /* Model */,
 				005238BD28EE0B52001A187F /* Support */,
+				009A8E7F28E8B39C000AA29B /* Info.plist */,
 				005238BC28EE0B09001A187F /* Extensions */,
 				005238BB28EE0AA8001A187F /* CustomViews */,
 				005238BA28EE0A34001A187F /* Screens */,
-				009A8E7C28E8B39C000AA29B /* LaunchScreen.storyboard */,
-				009A8E7F28E8B39C000AA29B /* Info.plist */,
 			);
 			path = GitComunity;
 			sourceTree = "<group>";
