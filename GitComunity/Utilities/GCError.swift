@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ErrorMessage: String {
+enum GCError: String, Error {
     case invalidUsername = "Invalid username"
     case unableToCoplete = "Unable to complete request"
     case invalidResponse = "Invalid response from server"
