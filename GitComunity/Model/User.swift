@@ -9,7 +9,7 @@ import Foundation
 
 struct User: Codable {
     var login: String
-    var avaterUrl: String
+    var avatarUrl: String
     var name: String?
     var location: String?
     var bio: String?

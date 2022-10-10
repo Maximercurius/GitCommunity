@@ -5,11 +5,14 @@
 //  Created by Makarov_Maxim on 06.10.2022.
 //
 
-import Foundation
+import UIKit
+
 
 class NetworkManager {
    static let shared = NetworkManager()
-    let baseURL = "https://api.gihub.com/users/"
+    private let baseURL = "https://api.gihub.com/users/"
+    let cache = NSCache<NSString, UIImage>()
+    
     private init() {}
     
     func getFollowers(for username: String, page: Int, completed: @escaping (Result<[Follower], GCError>) -> Void) {
@@ -29,17 +32,17 @@ class NetworkManager {
                 return
             }
             guard let data = data else {
-                        completed(.failure(.invalidData))
+                completed(.failure(.invalidData))
                 return
             }
             do {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 let followers = try decoder.decode([Follower].self, from: data)
-                            completed(.success(followers))
+                completed(.success(followers))
             }
             catch {
-                                completed(.failure(.invalidData))
+                completed(.failure(.invalidData))
             }
         }
         task.resume()
