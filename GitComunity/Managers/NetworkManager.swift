@@ -7,21 +7,23 @@
 
 import UIKit
 
-
 class NetworkManager {
    static let shared = NetworkManager()
-    private let baseURL = "https://api.gihub.com/users/"
-    let cache = NSCache<NSString, UIImage>()
+   private let baseURL = "https://api.gihub.com/users/"
+   let cache = NSCache<NSString, UIImage>()
     
+    
+
     private init() {}
     
     func getFollowers(for username: String, page: Int, completed: @escaping (Result<[Follower], GCError>) -> Void) {
         let endpoint = baseURL + "\(username)/followers?per_page=100&page=\(page)"
-        
+
         guard let url = URL(string: endpoint) else {
             completed(.failure(.invalidUsername))
             return
         }
+        
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let _ = error {
                 completed(.failure(.unableToCoplete))
