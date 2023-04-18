@@ -27,6 +27,7 @@
 		009A8E8828E98795000AA29B /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A8E8728E98795000AA29B /* FavoritesListVC.swift */; };
 		009A8E8A28E9F1FF000AA29B /* GCbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A8E8928E9F1FF000AA29B /* GCbutton.swift */; };
 		009A8E8C28E9F884000AA29B /* GCtextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A8E8B28E9F884000AA29B /* GCtextField.swift */; };
+		00D1C32829EDB2C2008F12B5 /* GCEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C32729EDB2C1008F12B5 /* GCEmptyStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		009A8E8728E98795000AA29B /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 		009A8E8928E9F1FF000AA29B /* GCbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCbutton.swift; sourceTree = "<group>"; };
 		009A8E8B28E9F884000AA29B /* GCtextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCtextField.swift; sourceTree = "<group>"; };
+		00D1C32729EDB2C1008F12B5 /* GCEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCEmptyStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +105,13 @@
 		005238BB28EE0AA8001A187F /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				00D1C32629EDB275008F12B5 /* Labels */,
+				00D1C32529EDB24B008F12B5 /* ViewControllers */,
+				00D1C32429EDB242008F12B5 /* ImageViews */,
+				00D1C32329EDB22F008F12B5 /* TextFields */,
+				00D1C32229EDB21E008F12B5 /* Buttons */,
+				00D1C32129EDB218008F12B5 /* Views */,
 				0020D15328F02927008DED85 /* Cells */,
-				005238B628EC8B2B001A187F /* GCAlertVC.swift */,
-				009A8E8928E9F1FF000AA29B /* GCbutton.swift */,
-				009A8E8B28E9F884000AA29B /* GCtextField.swift */,
-				005238B028EC873E001A187F /* GCTitleLabel.swift */,
-				005238B228EC89A2001A187F /* GCBodyLabel.swift */,
-				0020D15628F02A09008DED85 /* GCAvatarImageView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -171,6 +173,55 @@
 				005238BA28EE0A34001A187F /* Screens */,
 			);
 			path = GitComunity;
+			sourceTree = "<group>";
+		};
+		00D1C32129EDB218008F12B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00D1C32729EDB2C1008F12B5 /* GCEmptyStateView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		00D1C32229EDB21E008F12B5 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				009A8E8928E9F1FF000AA29B /* GCbutton.swift */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		00D1C32329EDB22F008F12B5 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				009A8E8B28E9F884000AA29B /* GCtextField.swift */,
+			);
+			name = TextFields;
+			sourceTree = "<group>";
+		};
+		00D1C32429EDB242008F12B5 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				0020D15628F02A09008DED85 /* GCAvatarImageView.swift */,
+			);
+			name = ImageViews;
+			sourceTree = "<group>";
+		};
+		00D1C32529EDB24B008F12B5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				005238B628EC8B2B001A187F /* GCAlertVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		00D1C32629EDB275008F12B5 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				005238B028EC873E001A187F /* GCTitleLabel.swift */,
+				005238B228EC89A2001A187F /* GCBodyLabel.swift */,
+			);
+			name = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +309,7 @@
 				0020D14928EF3EF1008DED85 /* Follower.swift in Sources */,
 				009A8E7228E8B391000AA29B /* AppDelegate.swift in Sources */,
 				0020D14E28EF5527008DED85 /* NetworkManager.swift in Sources */,
+				00D1C32829EDB2C2008F12B5 /* GCEmptyStateView.swift in Sources */,
 				005238AF28EB439E001A187F /* FollowerListVC.swift in Sources */,
 				009A8E7428E8B391000AA29B /* SceneDelegate.swift in Sources */,
 				009A8E8C28E9F884000AA29B /* GCtextField.swift in Sources */,
@@ -284,7 +336,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -328,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -344,7 +396,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -382,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -406,7 +458,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,7 +489,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

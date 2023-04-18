@@ -9,10 +9,8 @@ import UIKit
 
 class NetworkManager {
    static let shared = NetworkManager()
-   private let baseURL = "https://api.gihub.com/users/"
+   private let baseURL = "https://api.github.com/users/"
    let cache = NSCache<NSString, UIImage>()
-    
-    
 
     private init() {}
     
@@ -23,6 +21,7 @@ class NetworkManager {
             completed(.failure(.invalidUsername))
             return
         }
+        
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let _ = error {
@@ -42,8 +41,7 @@ class NetworkManager {
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 let followers = try decoder.decode([Follower].self, from: data)
                 completed(.success(followers))
-            }
-            catch {
+            } catch {
                 completed(.failure(.invalidData))
             }
         }

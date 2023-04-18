@@ -7,7 +7,7 @@
 
 import UIKit
 
-fileprivate var containerView = UIView()
+fileprivate var containerView: UIView!
 
 
 
@@ -42,10 +42,19 @@ extension UIViewController {
         ])
         activityindicator.startAnimating()
     }
+    
     func dismissLoadingView() {
         DispatchQueue.main.async{
             containerView.removeFromSuperview()
             containerView = nil
         }
     }
+    
+    func showEmptyStateView(message: String, in view: UIView) {
+        let emptyStateView = GCEmptyStateView(message: message)
+        emptyStateView.frame = view.bounds
+        view.addSubview(emptyStateView)
+    }
+    
+    
 }
