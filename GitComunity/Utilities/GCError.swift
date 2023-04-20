@@ -1,8 +1,8 @@
 //
-//  ErrorMessage.swift
+//  GCError.swift
 //  GitComunity
 //
-//  Created by Makarov_Maxim on 07.10.2022.
+//  Created by Makarov_Maxim on 20.04.2023.
 //
 
 import Foundation

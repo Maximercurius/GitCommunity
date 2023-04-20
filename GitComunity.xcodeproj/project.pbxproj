@@ -10,7 +10,6 @@
 		0020D14928EF3EF1008DED85 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020D14828EF3EF1008DED85 /* Follower.swift */; };
 		0020D14B28EF3FCE008DED85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020D14A28EF3FCE008DED85 /* User.swift */; };
 		0020D14E28EF5527008DED85 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020D14D28EF5527008DED85 /* NetworkManager.swift */; };
-		0020D15128F01E0E008DED85 /* GCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020D15028F01E0E008DED85 /* GCError.swift */; };
 		0020D15528F0295C008DED85 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020D15428F0295C008DED85 /* FollowerCell.swift */; };
 		0020D15728F02A09008DED85 /* GCAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020D15628F02A09008DED85 /* GCAvatarImageView.swift */; };
 		0020D15928F10E4D008DED85 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020D15828F10E4D008DED85 /* UIHelper.swift */; };
@@ -29,13 +28,13 @@
 		009A8E8C28E9F884000AA29B /* GCtextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A8E8B28E9F884000AA29B /* GCtextField.swift */; };
 		00D1C32829EDB2C2008F12B5 /* GCEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C32729EDB2C1008F12B5 /* GCEmptyStateView.swift */; };
 		00D1C32A29F05CC3008F12B5 /* GCUserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C32929F05CC3008F12B5 /* GCUserInfoVC.swift */; };
+		00D1C32C29F1BB1A008F12B5 /* GCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C32B29F1BB1A008F12B5 /* GCError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0020D14828EF3EF1008DED85 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		0020D14A28EF3FCE008DED85 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0020D14D28EF5527008DED85 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		0020D15028F01E0E008DED85 /* GCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCError.swift; sourceTree = "<group>"; };
 		0020D15428F0295C008DED85 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		0020D15628F02A09008DED85 /* GCAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCAvatarImageView.swift; sourceTree = "<group>"; };
 		0020D15828F10E4D008DED85 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		009A8E8B28E9F884000AA29B /* GCtextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCtextField.swift; sourceTree = "<group>"; };
 		00D1C32729EDB2C1008F12B5 /* GCEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCEmptyStateView.swift; sourceTree = "<group>"; };
 		00D1C32929F05CC3008F12B5 /* GCUserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCUserInfoVC.swift; sourceTree = "<group>"; };
+		00D1C32B29F1BB1A008F12B5 /* GCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +80,8 @@
 		0020D14F28F01DF4008DED85 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				0020D15028F01E0E008DED85 /* GCError.swift */,
 				0020D15828F10E4D008DED85 /* UIHelper.swift */,
+				00D1C32B29F1BB1A008F12B5 /* GCError.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -297,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D1C32C29F1BB1A008F12B5 /* GCError.swift in Sources */,
 				0020D14B28EF3FCE008DED85 /* User.swift in Sources */,
 				005238B328EC89A2001A187F /* GCBodyLabel.swift in Sources */,
 				0020D15728F02A09008DED85 /* GCAvatarImageView.swift in Sources */,
@@ -308,7 +309,6 @@
 				005238B728EC8B2B001A187F /* GCAlertVC.swift in Sources */,
 				009A8E8828E98795000AA29B /* FavoritesListVC.swift in Sources */,
 				0020D15528F0295C008DED85 /* FollowerCell.swift in Sources */,
-				0020D15128F01E0E008DED85 /* GCError.swift in Sources */,
 				009A8E8628E98709000AA29B /* SearchVC.swift in Sources */,
 				0020D14928EF3EF1008DED85 /* Follower.swift in Sources */,
 				009A8E7228E8B391000AA29B /* AppDelegate.swift in Sources */,
