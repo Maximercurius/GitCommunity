@@ -31,6 +31,7 @@
 		00D1C32C29F1BB1A008F12B5 /* GCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C32B29F1BB1A008F12B5 /* GCError.swift */; };
 		00D1C32E29F30882008F12B5 /* GCUserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C32D29F30882008F12B5 /* GCUserInfoHeaderVC.swift */; };
 		00D1C33029F308EE008F12B5 /* GCSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C32F29F308EE008F12B5 /* GCSecondaryTitleLabel.swift */; };
+		00D1C33229F31367008F12B5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C33129F31367008F12B5 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		00D1C32B29F1BB1A008F12B5 /* GCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCError.swift; sourceTree = "<group>"; };
 		00D1C32D29F30882008F12B5 /* GCUserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCUserInfoHeaderVC.swift; sourceTree = "<group>"; };
 		00D1C32F29F308EE008F12B5 /* GCSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCSecondaryTitleLabel.swift; sourceTree = "<group>"; };
+		00D1C33129F31367008F12B5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				0020D15828F10E4D008DED85 /* UIHelper.swift */,
 				00D1C32B29F1BB1A008F12B5 /* GCError.swift */,
+				00D1C33129F31367008F12B5 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				005238B328EC89A2001A187F /* GCBodyLabel.swift in Sources */,
 				0020D15728F02A09008DED85 /* GCAvatarImageView.swift in Sources */,
 				00D1C32A29F05CC3008F12B5 /* GCUserInfoVC.swift in Sources */,
+				00D1C33229F31367008F12B5 /* Constants.swift in Sources */,
 				009A8E8A28E9F1FF000AA29B /* GCbutton.swift in Sources */,
 				005238B128EC873E001A187F /* GCTitleLabel.swift in Sources */,
 				0020D15928F10E4D008DED85 /* UIHelper.swift in Sources */,

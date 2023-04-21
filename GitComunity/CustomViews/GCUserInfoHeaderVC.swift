@@ -30,6 +30,8 @@ class GCUserInfoHeaderVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addSubview()
+        layoutUI()
+        configureUIElements()
         
     }
     
@@ -37,8 +39,13 @@ class GCUserInfoHeaderVC: UIViewController {
         avatarImageView.downloadImage(from: user.avatarUrl)
         userNameLabel.text = user.login
         nameLabel.text = user.name ?? "Not Available"
-        locationLabel.text = user.location ?? ""
-        bioLabel.text = user.bio ?? ""
+        locationLabel.text = user.location ?? "No Location"
+        bioLabel.text = user.bio ?? "No bio available"
+        bioLabel.numberOfLines = 3
+        
+        locationImageView.image = UIImage(systemName: SFSymbols.location)
+        locationImageView.tintColor = .secondaryLabel
+        
         
     }
     
