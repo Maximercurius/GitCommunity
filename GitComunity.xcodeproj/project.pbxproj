@@ -29,6 +29,8 @@
 		00D1C32829EDB2C2008F12B5 /* GCEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C32729EDB2C1008F12B5 /* GCEmptyStateView.swift */; };
 		00D1C32A29F05CC3008F12B5 /* GCUserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C32929F05CC3008F12B5 /* GCUserInfoVC.swift */; };
 		00D1C32C29F1BB1A008F12B5 /* GCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C32B29F1BB1A008F12B5 /* GCError.swift */; };
+		00D1C32E29F30882008F12B5 /* GCUserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C32D29F30882008F12B5 /* GCUserInfoHeaderVC.swift */; };
+		00D1C33029F308EE008F12B5 /* GCSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C32F29F308EE008F12B5 /* GCSecondaryTitleLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		00D1C32729EDB2C1008F12B5 /* GCEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCEmptyStateView.swift; sourceTree = "<group>"; };
 		00D1C32929F05CC3008F12B5 /* GCUserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCUserInfoVC.swift; sourceTree = "<group>"; };
 		00D1C32B29F1BB1A008F12B5 /* GCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCError.swift; sourceTree = "<group>"; };
+		00D1C32D29F30882008F12B5 /* GCUserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCUserInfoHeaderVC.swift; sourceTree = "<group>"; };
+		00D1C32F29F308EE008F12B5 /* GCSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				005238B628EC8B2B001A187F /* GCAlertVC.swift */,
+				00D1C32D29F30882008F12B5 /* GCUserInfoHeaderVC.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 			children = (
 				005238B028EC873E001A187F /* GCTitleLabel.swift */,
 				005238B228EC89A2001A187F /* GCBodyLabel.swift */,
+				00D1C32F29F308EE008F12B5 /* GCSecondaryTitleLabel.swift */,
 			);
 			name = Labels;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D1C33029F308EE008F12B5 /* GCSecondaryTitleLabel.swift in Sources */,
 				00D1C32C29F1BB1A008F12B5 /* GCError.swift in Sources */,
 				0020D14B28EF3FCE008DED85 /* User.swift in Sources */,
 				005238B328EC89A2001A187F /* GCBodyLabel.swift in Sources */,
@@ -314,6 +321,7 @@
 				009A8E7228E8B391000AA29B /* AppDelegate.swift in Sources */,
 				0020D14E28EF5527008DED85 /* NetworkManager.swift in Sources */,
 				00D1C32829EDB2C2008F12B5 /* GCEmptyStateView.swift in Sources */,
+				00D1C32E29F30882008F12B5 /* GCUserInfoHeaderVC.swift in Sources */,
 				005238AF28EB439E001A187F /* FollowerListVC.swift in Sources */,
 				009A8E7428E8B391000AA29B /* SceneDelegate.swift in Sources */,
 				009A8E8C28E9F884000AA29B /* GCtextField.swift in Sources */,
