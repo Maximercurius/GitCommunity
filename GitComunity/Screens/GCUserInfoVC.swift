@@ -41,7 +41,7 @@ class GCUserInfoVC: UIViewController {
                     self.add(childVC: GCUserInfoHeaderVC(user: user), to: self.headerView)
                     self.add(childVC: GCRepoItemVC(user: user), to: self.itemViewOne)
                     self.add(childVC: GCFollowerItemVC(user: user), to: self.itemViewTwo)
-                    self.dateLabel.text = user.createdAt
+                    self.dateLabel.text = "GitHub since\(user.createdAt.convertToDisplayFormat())"
                 }
             case .failure(let error):
                 self.presentGCAlertOnMainThread(title: "warning", message: error.rawValue, buttonTitle: "Ok")
