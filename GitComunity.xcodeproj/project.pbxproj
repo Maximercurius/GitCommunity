@@ -38,6 +38,7 @@
 		00D1C33A29F62E08008F12B5 /* GCFollowerItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C33929F62E07008F12B5 /* GCFollowerItemVC.swift */; };
 		00D1C33D29F6630F008F12B5 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C33C29F6630F008F12B5 /* Date+Ext.swift */; };
 		00D1C33F29F6636D008F12B5 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C33E29F6636D008F12B5 /* String+Ext.swift */; };
+		00D1C34129F787F3008F12B5 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C34029F787F3008F12B5 /* PersistenceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		00D1C33929F62E07008F12B5 /* GCFollowerItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCFollowerItemVC.swift; sourceTree = "<group>"; };
 		00D1C33C29F6630F008F12B5 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		00D1C33E29F6636D008F12B5 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		00D1C34029F787F3008F12B5 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				0020D14D28EF5527008DED85 /* NetworkManager.swift */,
+				00D1C34029F787F3008F12B5 /* PersistenceManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				0020D14928EF3EF1008DED85 /* Follower.swift in Sources */,
 				009A8E7228E8B391000AA29B /* AppDelegate.swift in Sources */,
 				00D1C33D29F6630F008F12B5 /* Date+Ext.swift in Sources */,
+				00D1C34129F787F3008F12B5 /* PersistenceManager.swift in Sources */,
 				00D1C33829F62BC9008F12B5 /* GCRepoItemVC.swift in Sources */,
 				0020D14E28EF5527008DED85 /* NetworkManager.swift in Sources */,
 				00D1C32829EDB2C2008F12B5 /* GCEmptyStateView.swift in Sources */,
