@@ -8,8 +8,8 @@
 import UIKit
 
 class FollowerCell: UICollectionViewCell {
-    static let reuseID = "FollowerCell"
     
+    static let reuseID = "FollowerCell"
     let avatarImageView = GCAvatarImageView(frame: .zero)
     let usernameLabel = GCTitleLabel(textAlignment: .center, fontSize: 16)
     

@@ -39,6 +39,7 @@
 		00D1C33D29F6630F008F12B5 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C33C29F6630F008F12B5 /* Date+Ext.swift */; };
 		00D1C33F29F6636D008F12B5 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C33E29F6636D008F12B5 /* String+Ext.swift */; };
 		00D1C34129F787F3008F12B5 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C34029F787F3008F12B5 /* PersistenceManager.swift */; };
+		00D1C34329F8CF4F008F12B5 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C34229F8CF4F008F12B5 /* FavoriteCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		00D1C33C29F6630F008F12B5 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		00D1C33E29F6636D008F12B5 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		00D1C34029F787F3008F12B5 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		00D1C34229F8CF4F008F12B5 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				0020D15428F0295C008DED85 /* FollowerCell.swift */,
+				00D1C34229F8CF4F008F12B5 /* FavoriteCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				0020D15928F10E4D008DED85 /* UIHelper.swift in Sources */,
 				005238B928EC9C5B001A187F /* UIViewController+Ext.swift in Sources */,
 				005238B728EC8B2B001A187F /* GCAlertVC.swift in Sources */,
+				00D1C34329F8CF4F008F12B5 /* FavoriteCell.swift in Sources */,
 				009A8E8828E98795000AA29B /* FavoritesListVC.swift in Sources */,
 				0020D15528F0295C008DED85 /* FollowerCell.swift in Sources */,
 				009A8E8628E98709000AA29B /* SearchVC.swift in Sources */,
