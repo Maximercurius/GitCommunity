@@ -41,6 +41,7 @@
 		00D1C34129F787F3008F12B5 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C34029F787F3008F12B5 /* PersistenceManager.swift */; };
 		00D1C34329F8CF4F008F12B5 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C34229F8CF4F008F12B5 /* FavoriteCell.swift */; };
 		00D1C34629F934A4008F12B5 /* GCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C34529F934A4008F12B5 /* GCTabBarController.swift */; };
+		00D1C34829FA22F3008F12B5 /* GCAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C34729FA22F3008F12B5 /* GCAlertContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		00D1C34029F787F3008F12B5 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		00D1C34229F8CF4F008F12B5 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		00D1C34529F934A4008F12B5 /* GCTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCTabBarController.swift; sourceTree = "<group>"; };
+		00D1C34729FA22F3008F12B5 /* GCAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCAlertContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 			children = (
 				00D1C32729EDB2C1008F12B5 /* GCEmptyStateView.swift */,
 				00D1C33329F466F4008F12B5 /* GCItemInfoView.swift */,
+				00D1C34729FA22F3008F12B5 /* GCAlertContainerView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D1C34829FA22F3008F12B5 /* GCAlertContainerView.swift in Sources */,
 				00D1C33029F308EE008F12B5 /* GCSecondaryTitleLabel.swift in Sources */,
 				00D1C32C29F1BB1A008F12B5 /* GCError.swift in Sources */,
 				0020D14B28EF3FCE008DED85 /* User.swift in Sources */,
