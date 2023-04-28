@@ -42,6 +42,7 @@
 		00D1C34629F934A4008F12B5 /* GCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C34529F934A4008F12B5 /* GCTabBarController.swift */; };
 		00D1C34829FA22F3008F12B5 /* GCAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C34729FA22F3008F12B5 /* GCAlertContainerView.swift */; };
 		00D1C34A29FA2BF2008F12B5 /* GCDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C34929FA2BF2008F12B5 /* GCDataLoadingVC.swift */; };
+		00D1C34C29FC33B5008F12B5 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C34B29FC33B5008F12B5 /* UIView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		00D1C34529F934A4008F12B5 /* GCTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCTabBarController.swift; sourceTree = "<group>"; };
 		00D1C34729FA22F3008F12B5 /* GCAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCAlertContainerView.swift; sourceTree = "<group>"; };
 		00D1C34929FA2BF2008F12B5 /* GCDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDataLoadingVC.swift; sourceTree = "<group>"; };
+		00D1C34B29FC33B5008F12B5 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			children = (
 				005238B828EC9C5B001A187F /* UIViewController+Ext.swift */,
 				00D1C33C29F6630F008F12B5 /* Date+Ext.swift */,
+				00D1C34B29FC33B5008F12B5 /* UIView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D1C34C29FC33B5008F12B5 /* UIView+Ext.swift in Sources */,
 				00D1C34829FA22F3008F12B5 /* GCAlertContainerView.swift in Sources */,
 				00D1C33029F308EE008F12B5 /* GCSecondaryTitleLabel.swift in Sources */,
 				00D1C32C29F1BB1A008F12B5 /* GCError.swift in Sources */,
