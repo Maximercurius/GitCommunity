@@ -7,9 +7,8 @@
 
 import UIKit
 
-protocol UserInfoVCDelegate: AnyObject {
-    func didTapGitHubProfile(for user: User)
-    func didTapGetFollowers(for user: User)
+protocol UserVCDelegate: AnyObject {
+    func didRequestFollowers(for username: String)
 }
 
 class GCUserInfoVC: GCDataLoadingVC {
@@ -21,7 +20,7 @@ class GCUserInfoVC: GCDataLoadingVC {
     
     var itemViews:[UIView] = []
     var userName: String!
-    weak var delegate: FollowerListVCDelegate!
+    weak var delegate: UserVCDelegate!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,7 +92,7 @@ class GCUserInfoVC: GCDataLoadingVC {
             itemViewTwo.heightAnchor.constraint(equalToConstant: itemHeight),
             
             dateLabel.topAnchor.constraint(equalTo: itemViewTwo.bottomAnchor, constant: padding),
-            dateLabel.heightAnchor.constraint(equalToConstant: 18)
+            dateLabel.heightAnchor.constraint(equalToConstant: 50)
         
         ])
     }
@@ -111,7 +110,7 @@ class GCUserInfoVC: GCDataLoadingVC {
     
 }
 
-extension GCUserInfoVC: UserInfoVCDelegate {
+extension GCUserInfoVC: GCRepoItemVCDelegate {
     func didTapGitHubProfile(for user: User) {
         guard let url = URL(string: user.htmlUrl) else {
             presentGCAlertOnMainThread(title: "Invalid URL", message: "The url attached for this user is invalid.", buttonTitle: "Ok")
@@ -119,7 +118,9 @@ extension GCUserInfoVC: UserInfoVCDelegate {
         }
         presentSafariVC(with: url)
     }
-    
+}
+
+extension GCUserInfoVC: GCFollowerItemVCDelegate {
     func didTapGetFollowers(for user: User) {
         guard user.followers != 0 else {
             presentGCAlertOnMainThread(title: "No Followers", message: "This user has no followers.😔", buttonTitle: "Ok")

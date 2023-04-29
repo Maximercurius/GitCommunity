@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol GCRepoItemVCDelegate: AnyObject {
+    func didTapGitHubProfile(for user: User)
+}
+
 class GCRepoItemVC: GCItemInfoVC {
+    
+    weak var delegate: GCRepoItemVCDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
