@@ -43,6 +43,7 @@
 		00D1C34829FA22F3008F12B5 /* GCAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C34729FA22F3008F12B5 /* GCAlertContainerView.swift */; };
 		00D1C34A29FA2BF2008F12B5 /* GCDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C34929FA2BF2008F12B5 /* GCDataLoadingVC.swift */; };
 		00D1C34C29FC33B5008F12B5 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C34B29FC33B5008F12B5 /* UIView+Ext.swift */; };
+		00D1C34E29FED233008F12B5 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1C34D29FED233008F12B5 /* UITableView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		00D1C34729FA22F3008F12B5 /* GCAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCAlertContainerView.swift; sourceTree = "<group>"; };
 		00D1C34929FA2BF2008F12B5 /* GCDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDataLoadingVC.swift; sourceTree = "<group>"; };
 		00D1C34B29FC33B5008F12B5 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		00D1C34D29FED233008F12B5 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				005238B828EC9C5B001A187F /* UIViewController+Ext.swift */,
 				00D1C33C29F6630F008F12B5 /* Date+Ext.swift */,
 				00D1C34B29FC33B5008F12B5 /* UIView+Ext.swift */,
+				00D1C34D29FED233008F12B5 /* UITableView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				00D1C32E29F30882008F12B5 /* GCUserInfoHeaderVC.swift in Sources */,
 				005238AF28EB439E001A187F /* FollowerListVC.swift in Sources */,
 				00D1C33A29F62E08008F12B5 /* GCFollowerItemVC.swift in Sources */,
+				00D1C34E29FED233008F12B5 /* UITableView+Ext.swift in Sources */,
 				009A8E7428E8B391000AA29B /* SceneDelegate.swift in Sources */,
 				009A8E8C28E9F884000AA29B /* GCtextField.swift in Sources */,
 			);
