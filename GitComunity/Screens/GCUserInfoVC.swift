@@ -13,13 +13,13 @@ protocol UserVCDelegate: AnyObject {
 
 class GCUserInfoVC: GCDataLoadingVC {
     
-    let scrollView = UIScrollView()
+    let scrollView  = UIScrollView()
     let contentView = UIView()
     
-    let headerView = UIView()
+    let headerView  = UIView()
     let itemViewOne = UIView()
     let itemViewTwo = UIView()
-    let dateLabel = GCBodyLabel(textAlignment: .center)
+    let dateLabel   = GCBodyLabel(textAlignment: .center)
     
     var itemViews:[UIView] = []
     var userName: String!
@@ -98,7 +98,6 @@ class GCUserInfoVC: GCDataLoadingVC {
             ])
         }
         
-    
         NSLayoutConstraint.activate([
             headerView.topAnchor.constraint(equalTo: contentView.topAnchor),
             headerView.heightAnchor.constraint(equalToConstant: 210),

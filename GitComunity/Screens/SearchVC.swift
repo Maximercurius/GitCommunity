@@ -9,9 +9,9 @@ import UIKit
 
 class SearchVC: UIViewController {
     
-    let logoImageView = UIImageView()
-    let usernameTextField = GCtextField()
-    let callToActionButton = GCbutton(color: .systemGreen, title: "Get Folowers", systemImageName: "person.3")
+    let logoImageView       = UIImageView()
+    let usernameTextField   = GCtextField()
+    let callToActionButton  = GCbutton(color: .systemGreen, title: "Get Folowers", systemImageName: "person.3")
     
     var isUsernameEntered: Bool {
         return !usernameTextField.text!.isEmpty
@@ -49,13 +49,13 @@ class SearchVC: UIViewController {
        
        usernameTextField.resignFirstResponder()
        
-       let followerListVC = FollowerListVC(username: usernameTextField.text!)
+       let followerListVC                  = FollowerListVC(username: usernameTextField.text!)
        navigationController?.pushViewController( followerListVC, animated: true)
     }
     
     func configureLogoImageView() {
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
-        logoImageView.image = Images.gcLogo
+        logoImageView.image                = Images.gcLogo
         
         let topConstraintConstant: CGFloat = DeviceTypes.isiPhoneSE || DeviceTypes.isiPhone8Zoomed ? 20 : 80
               
