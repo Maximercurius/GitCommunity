@@ -55,16 +55,17 @@ class GCUserInfoVC: GCDataLoadingVC {
     }
     
     func getUserInfo() {
-        NetworkManager.shared.getUserInfo(for: userName) { [weak self] result in
-            guard let self = self else { return }
-            
-            switch result {
-            case .success(let user):
-                DispatchQueue.main.async {
-                    self.configureUIElements(with: user)
+        
+        Task {
+            do {
+                let user = try await NetworkManager.shared.getUserInfo(for: userName)
+                configureUIElements(with: user)
+            } catch {
+                if let gcError = error as? GCError {
+                    presentGCAlert(title: "Something went wrong", message: gcError.rawValue, buttonTitle: "Ok")
+                } else {
+                    presentDefaultError()
                 }
-            case .failure(let error):
-                self.presentGCAlertOnMainThread(title: "warning", message: error.rawValue, buttonTitle: "Ok")
             }
         }
     }
@@ -130,7 +131,7 @@ class GCUserInfoVC: GCDataLoadingVC {
 extension GCUserInfoVC: GCRepoItemVCDelegate {
     func didTapGitHubProfile(for user: User) {
         guard let url = URL(string: user.htmlUrl) else {
-            presentGCAlertOnMainThread(title: "Invalid URL", message: "The url attached for this user is invalid.", buttonTitle: "Ok")
+            presentGCAlert(title: "Invalid URL", message: "The url attached for this user is invalid.", buttonTitle: "Ok")
             return
         }
         presentSafariVC(with: url)
@@ -140,7 +141,7 @@ extension GCUserInfoVC: GCRepoItemVCDelegate {
 extension GCUserInfoVC: GCFollowerItemVCDelegate {
     func didTapGetFollowers(for user: User) {
         guard user.followers != 0 else {
-            presentGCAlertOnMainThread(title: "No Followers", message: "This user has no followers.😔", buttonTitle: "Ok")
+            presentGCAlert(title: "No Followers", message: "This user has no followers.😔", buttonTitle: "Ok")
             return
         }
         delegate.didRequestFollowers (for: user.login)

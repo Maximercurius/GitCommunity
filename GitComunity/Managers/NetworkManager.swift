@@ -96,7 +96,6 @@ class NetworkManager {
             throw GCError.invalidData
         }
     }
-}
     
     func downloadImage(from urlString: String, completed: @escaping(UIImage?) -> Void) {
         

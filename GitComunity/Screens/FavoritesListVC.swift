@@ -49,7 +49,9 @@ class FavoritesListVC: GCDataLoadingVC {
                 updateUI(with: favorites)
 
             case .failure(let error):
-                self.presentGCAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
+                DispatchQueue.main.async {
+                    self.presentGCAlert(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
+                }
             }
             
         }
@@ -99,7 +101,10 @@ extension FavoritesListVC: UITableViewDataSource, UITableViewDelegate {
                 return
                 
             }
-            self.presentGCAlertOnMainThread(title: "Unable to remove", message: error.rawValue, buttonTitle: "Ok")
+            
+            DispatchQueue.main.async{
+                self.presentGCAlert(title: "Unable to remove", message: error.rawValue, buttonTitle: "Ok")
+            }
             
         }
 
