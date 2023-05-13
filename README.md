@@ -7,7 +7,7 @@ Git Commonity - приложение для просмотра фолловер�
 <img src="https://github.com/Maximercurius/GitCommunity/blob/main/Screen%20Shots/GCFollowers%203.png" width="300px"/>
 <img src="https://github.com/Maximercurius/GitCommunity/blob/main/Screen%20Shots/GC%20Followers%204.png" width="300px"/>
 <img src="https://github.com/Maximercurius/GitCommunity/blob/main/Screen%20Shots/GC%20Followers%205.png" width="300px"/>
-<img src="https://github.com/Maximercurius/GitCommunity/blob/main/Screen%20Shots/GC%20Followers%205.png" width="300px"/>  
+<img src="https://github.com/Maximercurius/GitCommunity/blob/main/Screen%20Shots/GC%20Followers%206.png" width="300px"/>  
 </div>
 
 ### О проекте:
